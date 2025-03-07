@@ -1,0 +1,723 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Estilos do cabeçalho */
+header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 15px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.navbar-brand img {
+  max-height: 40px;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-nav .nav-item {
+  margin: 0 10px;
+}
+
+.social li {
+  list-style: none;
+  margin-right: 10px;
+}
+
+.social li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Estilos do herói */
+.hero {
+  background: linear-gradient(to right, #42a5f5, #3f51b5);
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.hero .btn {
+  margin-right: 10px;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.hero .btn:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* Estilos do Call to Action */
+.cta {
+  background-color: #007bff;
+  color: #fff;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.cta p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.cta .btn {
+  background-color: #fff;
+  color: #007bff;
+  border-color: #fff;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.cta .btn:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+  color: #fff;
+}
+
+/* Estilos dos Serviços */
+.services {
+  padding: 80px 0;
+}
+
+.services .title h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.services .title h6 {
+  color: #007bff;
+  font-size: 1.5rem;
+}
+
+/* Estilos do Rodapé */
+footer {
+  background-color: #2980b9; /* Cor de fundo desejada */
+  color: #fff;
+  padding: 50px 0;
+  text-align: center; /* Centraliza o texto */
+}
+
+.footer-widgets {
+  padding-bottom: 30px;
+}
+
+.footer-widgets .widget-title {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: center; /* Centraliza o texto do título */
+}
+
+.footer-widgets p {
+  margin-bottom: 10px;
+}
+
+.media {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+}
+
+.media i {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.media-body h6 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  text-align: center; /* Centraliza o texto */
+}
+
+/* Estilos da seção Featured */
+.featured {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+.featured .title {
+  margin-bottom: 40px;
+}
+
+.featured .title h6 {
+  color: #007bff;
+  font-size: 1.5rem;
+}
+
+.featured .title h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.featured p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.featured-img {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.featured-img img {
+  width: 300px; /* Define uma largura fixa para as imagens */
+  height: auto;
+  margin-bottom: 10px; /* Adiciona um pequeno espaço abaixo de cada imagem */
+}
+
+.featured-img .title {
+  width: 100%; /* Garante que o título ocupe a largura total */
+  margin-bottom: 20px; /* Adiciona um espaço abaixo do título */
+  text-align: center; /* Centraliza o texto do título */
+}
+
+/* Estilos de Responsividade */
+@media (max-width: 991.98px) {
+  .top-header {
+    display: block !important;
+  }
+
+  .login,
+  .cart,
+  .search-icon {
+    display: none;
+  }
+
+  .social {
+    display: flex !important;
+  }
+
+  .featured .title h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .cta {
+    padding: 60px 0;
+  }
+
+  .cta h2 {
+    font-size: 2rem;
+  }
+
+  .cta p {
+    font-size: 1rem;
+  }
+
+  .featured {
+    padding: 60px 0;
+  }
+
+  .featured .title h1 {
+    font-size: 1.8rem;
+  }
+
+  .featured-img img {
+    width: 100%; /* No mobile, as imagens ocupam a largura total */
+  }
+}
+
+@media (max-width: 575.98px) {
+  .single-rpost .post-thumb {
+    margin-bottom: 15px;
+  }
+
+  .featured-img img {
+    width: 80%; /* No mobile, as imagens ocupam a largura total */
+  }
+}
+
+.testimonial-and-clients .single-rpost .post-thumb img {
+  max-width: 50%;
+  height: auto;
+}
+
+/* Estilos customizados */
+.logo-img {
+  width: 200px; /* ou qualquer largura desejada */
+  height: 200px; /* mantém a proporção da imagem */
+}
+
+/* Estilos para as imagens */
+.imagem-maquina,
+.imagem-carro,
+.imagem-caminhao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px; /* Ajuste conforme necessário */
+}
+
+.maquina-imagem,
+.carro-imagem,
+.caminhao-imagem {
+  text-align: center;
+}
+
+.maquina-imagem img,
+.carro-imagem img,
+.caminhao-imagem img {
+  max-width: 100%; /* Garantir que as imagens não ultrapassem a largura do contêiner */
+  height: auto; /* Manter a proporção da imagem */
+  border-radius: 8px; /* Cantos arredondados, ajuste conforme necessário */
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Sombra para destacar a imagem */
+}
+
+.maquina-promocoes,
+.carro-promocoes,
+.caminhao-promocoes {
+  margin-top: 15px; /* Espaço entre a imagem e o texto */
+  font-size: 16px; /* Tamanho da fonte do texto */
+  color: #ffffff; /* Cor do texto */
+}
+
+.maquina-promocoes ul,
+.carro-promocoes ul,
+.caminhao-promocoes ul {
+  list-style: none; /* Remove marcadores de lista */
+  padding: 0; /* Remove padding */
+}
+
+.maquina-promocoes li,
+.carro-promocoes li,
+.caminhao-promocoes li {
+  margin-bottom: 10px; /* Espaçamento entre os itens da lista */
+}
+
+/* Estilos para a seção de depoimentos e clientes */
+.testimonial-and-clients .single-rpost .post-thumb {
+  text-align: center; /* Centraliza as imagens horizontalmente */
+}
+
+.testimonial-and-clients .single-rpost .post-thumb img {
+  max-width: 100%; /* Garante que as imagens ocupem a largura total do contêiner */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estilos para a tabela de preços */
+.pricing-table {
+  padding: 100px 0;
+}
+
+.single-pricing {
+  padding: 65px 0 40px;
+  margin-top: 23px;
+  color: #fff;
+  background: #26264b;
+  border: 0px solid #fff;
+  position: relative;
+  overflow: hidden;
+}
+/* Estilos gerais */
+.imagem-maquina,
+.imagem-carro,
+.imagem-caminhao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px; /* Ajuste conforme necessário */
+}
+
+.maquina-imagem,
+.carro-imagem,
+.caminhao-imagem {
+  text-align: center;
+}
+
+.maquina-imagem img,
+.carro-imagem img,
+.caminhao-imagem img {
+  max-width: 100%; /* Garantir que as imagens não ultrapassem a largura do contêiner */
+  height: auto; /* Manter a proporção da imagem */
+  border-radius: 8px; /* Cantos arredondados, ajuste conforme necessário */
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Sombra para destacar a imagem */
+}
+
+.maquina-promocoes,
+.carro-promocoes,
+.caminhao-promocoes {
+  margin-top: 15px; /* Espaço entre a imagem e o texto */
+  font-size: 16px; /* Tamanho da fonte do texto */
+  color: #ffffff; /* Cor do texto */
+}
+
+.maquina-promocoes ul,
+.carro-promocoes ul,
+.caminhao-promocoes ul {
+  list-style: none; /* Remove marcadores de lista */
+  padding: 0; /* Remove padding */
+}
+
+.maquina-promocoes li,
+.carro-promocoes li,
+.caminhao-promocoes li {
+  margin-bottom: 10px; /* Espaçamento entre os itens da lista */
+}
+
+/* Estilos gerais para as imagens */
+.imagem-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+.imagem-container > div {
+  flex: 1;
+  text-align: center;
+  margin: 0 15px;
+}
+
+.imagem-container img {
+  width: 100%;
+  max-width: 300px; /* Ajuste este valor conforme necessário */
+  height: 200px; /* Altura fixa */
+  object-fit: cover; /* Garante que a imagem se ajuste ao contêiner mantendo a proporção */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.promocoes {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.promocoes ul {
+  list-style: none;
+  padding: 0;
+}
+
+.promocoes li {
+  margin-bottom: 10px;
+}
+
+/* Estilos para as imagens da seção de depoimentos e clientes */
+.testimonial-and-clients .post-thumb img {
+  width: 100%; /* Garante que as imagens ocupem a largura total do contêiner */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estilos para as imagens da seção de depoimentos e clientes */
+.testimonial-and-clients .post-thumb {
+  text-align: center; /* Centraliza as imagens horizontalmente */
+}
+
+.testimonial-and-clients .post-thumb img {
+  max-width: 100%; /* Garante que as imagens não ultrapassem a largura do contêiner */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estilos para a tabela de preços */
+.pricing-table {
+  padding: 100px 0;
+}
+
+.single-pricing {
+  padding: 65px 0 40px;
+  margin-top: 23px;
+  color: #fff;
+  background: #26264b;
+  border: 0px solid #fff;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.2s ease-in-out;
+}
+
+.single-pricing span {
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 6px 15px;
+  border-radius: 15px;
+  background-color: transparent;
+  position: absolute;
+  top: 28px;
+  right: 6px;
+  transition: all 0.2s ease-in-out;
+}
+
+.single-pricing h2 {
+  margin-bottom: -5px;
+}
+
+.single-pricing .desc {
+  color: #9d9d9d;
+  padding-bottom: 30px;
+  margin-bottom: 32px;
+  border-bottom: 2px solid #2f2f2f;
+  transition: all 0.2s ease-in-out;
+}
+
+.single-pricing .price {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.single-pricing p {
+  color: #ddd;
+}
+
+.single-pricing p:last-of-type {
+  margin-bottom: 25px;
+}
+
+.single-pricing svg {
+  width: 170px;
+  position: absolute;
+  top: -45px;
+  right: -60px;
+  z-index: -1;
+  transition: all 0.5s ease-in-out;
+}
+
+.single-pricing:hover {
+  border: 4px solid #fff;
+  box-shadow: 0px 10px 18px 0px rgba(0, 0, 0, 0.16);
+  margin: 19px 0 -4px;
+}
+
+.single-pricing:hover span {
+  background-color: #26264b;
+}
+
+.single-pricing:hover .desc {
+  color: #fff;
+  border-bottom: 2px solid rgba(245, 245, 245, 0.322);
+}
+
+.single-pricing:hover svg {
+  width: 500%;
+  top: -200%;
+  right: -50%;
+}
+
+.single-pricing:hover .btn {
+  box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+}
+
+/* Estilo da Tabela */
+table {
+  width: 100%;
+  margin-bottom: 1rem;
+  background-color: #fff; /* Cor de fundo da tabela */
+  border: 1px solid rgb(0, 60, 255);
+  transition: background-color 0.3s ease;
+}
+
+table th,
+table td {
+  padding: 0.75rem;
+  text-align: left;
+  vertical-align: top;
+  border-top: 1px solid rgba(0, 47, 255, 0.1);
+}
+
+/* Estilo do Hover */
+table tbody tr:hover {
+  background-color: rgba(0, 123, 255, 0.3); /* Cor de fundo com transparência no hover */
+}
+
+/* Estilo do Texto */
+table tbody tr td {
+  color: #333; /* Cor do texto na tabela */
+}
+/* Estilizando a tabela de preços */
+.pricing-table {
+  background-color: #ffffff; /* Cor de fundo da seção */
+  padding: 50px 0; /* Espaçamento interno */
+}
+
+.single-pricing {
+  background-color: #006eff; /* Cor de fundo dos itens de preço */
+  border: 1px solid #dee2e6; /* Borda dos itens de preço */
+  padding: 40px 20px; /* Espaçamento interno */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Transição suave */
+}
+
+.single-pricing:hover {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1); /* Sombra ao passar o mouse */
+  transform: translateY(-5px); /* Efeito de levantamento ao passar o mouse */
+}
+
+.single-pricing .desc {
+  font-size: 18px; /* Tamanho da fonte da descrição */
+  color: #333333; /* Cor do texto da descrição */
+  margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+.single-pricing .price {
+  font-size: 36px; /* Tamanho da fonte do preço */
+  color: #ffffff; /* Cor do texto do preço */
+  margin-bottom: 15px; /* Espaçamento inferior */
+}
+
+.single-pricing p {
+  margin: 0; /* Remover margens padrão */
+}
+
+/* Sombra e cor ao passar o mouse */
+.single-pricing:hover {
+  box-shadow: 0 0 30px rgb(8, 97, 231);
+}
+
+
+/* Estilos do Popup */
+.popup {
+  display: block; /* Mudança para exibir o pop-up */
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 123, 255, 0.6); /* Azul claro com transparência */
+}
+
+.popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com transparência */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.popup-content h2 {
+  margin-bottom: 10px;
+}
+
+.popup-content p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.popup-content .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.popup-content .btn:hover {
+  background-color: #0056b3;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  color: #aaa;
+}
+
+
+/* Estilo do Hover */
+table tbody tr:hover {
+  background-color: rgba(0, 72, 150, 0.281); /* Cor de fundo com transparência */
+}
+
+/* Estilo do Texto */
+table tbody tr td {
+  color: #333;
+}
+
+/* Estilo para os SVGs */
+.single-pricing svg {
+  fill: transparent; /* Preenchimento transparente */
+}
+/* Estilo para a seção de Vantagens Consórcio Mantomac */
+.vantagens-image {
+  max-width: 50%; /* Reduz o tamanho da imagem para metade */
+  display: block;
+  margin: 0 auto; /* Centraliza a imagem horizontalmente */
+  box-shadow: 0 4px 8px rgba(0, 60, 255, 0.1); /* Sombra suave */
+  border-radius: 10px; /* Cantos arredondados */
+}
+/* Estilos para destino-viagem */
+.destino-viagem {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.destino-viagem img {
+  width: 100vw; /* Ocupa toda a largura da viewport */
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  animation: fadeIn 1s ease-in-out;
+}
+
+
+
+/* Estilos para Responsividade */
+@media (max-width: 768px) {
+  .destino-viagem img {
+    max-width: 100%; /* Ajusta para largura máxima em telas menores */
+  }
+}
+
+
+
+
+
